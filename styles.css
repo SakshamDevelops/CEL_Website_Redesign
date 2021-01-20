@@ -1,0 +1,132 @@
+body{
+    text-align: center;
+}
+/* NAVBAR */
+ul{
+ margin-right: 50px;
+}
+li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    margin: 0 20px;
+}
+.logo-img{
+   width: 30%;
+}
+.nav{
+    background-color: #121212;
+}
+
+/* CLOCK TOWER IMAGES AND HEADINGS */
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: azure;
+    animation: UpSmall 1.3s ease-in-out 0s 1 normal forwards;
+}
+
+.left{
+ position: absolute;
+ left: 0;
+ z-index: -1;
+ animation: leftIn 1s ease-in-out 1s normal forwards; 
+ opacity: 0;
+}
+.clock{
+    position: relative;
+    left: 15px;
+margin: 0 auto;
+animation: appearIn 1.5s ease-in-out 1s normal forwards;
+opacity: 0;
+}
+.right{
+position: absolute;
+right: 0;
+z-index: -1;
+animation: rightIn 1s ease-in-out 1s normal forwards; 
+opacity: 0;
+}
+
+
+/* ANIMATIONS */
+
+
+@keyframes leftIn{
+    from{
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rightIn{
+    from{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes appearIn {
+0%{
+    opacity: 0;
+    
+  }
+  100%{
+    opacity: 1;
+  
+  }
+}
+
+@keyframes UpSmall{
+ 0%{
+  font-size: 1rem;
+  transform: translateY(350px);
+ }
+ 100%{
+    font-size: 3rem;
+    transform: translateY(50px);
+ }
+
+}
+
+/* ABOUT US */
+
+.about-img{
+     width: 90%;
+     margin: 10% 5% 5%;
+}
+
+.card-head{
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #F4CE2F;
+ width: 300px;
+ height: 90px;
+ opacity: 0.78;
+ border-radius: 15px;
+ font-size: 2.7rem;
+ margin: 8% auto 0;
+ font-family: 'Montserrat', sans-serif;
+ z-index: 3;
+ color: #3D3D3D;
+}
+
+.card-body{
+    width: 550px;
+    height: 500px;
+    opacity: 0.8;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #424242;
+    margin: -5% auto;
+}
