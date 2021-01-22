@@ -10,6 +10,7 @@ li{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
     margin: 0 20px;
+    font-weight: 300;
 }
 .logo-img{
    width: 30%;
@@ -306,7 +307,7 @@ i:hover{
 /* GET NOTIFIED */
 #notified{
   background-color: #F4CE2F;
-  padding: 2% 5%;
+  padding: 5% 5% 2%;
   margin: 4% 0 0;
 }
 
@@ -344,7 +345,7 @@ i:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 3% 0 0;
+    margin: 1% 0 0;
 }
 .social-icons{
     display: inline;
