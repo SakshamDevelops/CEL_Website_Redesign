@@ -7,6 +7,10 @@
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">     
    <!-- FONT AWESOME -->
    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   <!-- ANIMATE ON SCROLL JS -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <!-- ANIMATE ON SCROLL CSS -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <!-- BOOTSTRAP CSS -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
    <!-- BOOTSTRAP SCRIPT -->
@@ -20,7 +24,7 @@
  <!-- NAVBAR -->
 
 
- <nav class="navbar navbar-expand-md navbar-dark">
+ <nav class="navbar navbar-expand-md navbar-dark ">
 <div class="container-fluid">   
      <a href="" class="navbar-brand" ><img src="images/cel.png" alt="CEL_logo" class="logo-img"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +42,7 @@
         <a class="nav-link" href="">Resources <i class="fas fa-chevron-down"></i></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="">Contact</a>
+        <a class="nav-link" href="#contact">Contact</a>
     </li>
   </ul>
   </div>
@@ -46,25 +50,148 @@
 </nav>
 
 
-<!-- CLOCK TOWER AND HEADING -->
+<!-- CLOCK TOWER AND INTRO HEADING -->
 
 <div class="heading">
-<h1 style="margin-bottom: 60px;">Center For Entrepreneurial Leadership</h1>
+
+<h1 style="margin-bottom: 60px;" class="heading-intro">Center For Entrepreneurial Leadership</h1>
 <img src="images/Left.png" class="left" alt="">
 <img src="images/clock.png" class="clock" alt="">
 <img src="images/Right.png" class="right" alt="">
+
 </div>
  
 <!-- ABOUT US -->
 <div class="row title-row">
+
     <div class="col-lg-6">
         <img src="images/business.png" class="about-img" alt="">
     </div>
+
     <div class="col-lg-6">
         <div class="card-head">About Us</div>
-        <div class="card-body"></div>
+        <div class="card-about-body">
+            <span><em><strong> Center for Entrepreneurial Leadership (CEL) is 
+            a Center for Excellence at BITS Pilani, Pilani Campus.</strong></em> </span>
+            <br>
+        As the Entrepreneurship Cell of one of the premier institutes of the country, 
+        our prime focus is to provide an environment conducive for the 
+        entrepreneurial spirit and related skills among
+        the college students and across the nation. 
+        <br> <br>
+        Through an amalgamation of various projects, we aspire to cater to 
+        the interests of a wide variety of people - ranging from students with
+        an entrepreneurial bent to economically weaker sections in the nearby rural areas,
+        as well as established startups in need of funding or mentorship.</div>
     </div>
+
 </div>
+
+<!-- Features -->
+
+
+
+
+
+<!-- PROJECTS -->
+<section id="projects">
+
+    <h1 class="heading-project">Our Projects</h1>
+    <div class="container-fluid row">
+    <div class="col-lg-3 col-sm-6" data-aos="flip-right" >
+        <div class="card project-card-shape" style="background-color: #424242;  border-radius: 20px;">
+            <img src="images/ss.png" class="circle card-img-top" alt="">
+            <div class="card-body ">
+                <h4 class="card-title">Startup Sphere</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-dark">Go somewhere</a>
+            </div>
+    
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6" data-aos="flip-right" data-aos-delay="400">
+        <div class="card project-card-shape" style="background-color: #424242;  border-radius: 20px;">
+            <img src="images/sis.png" class="circle card-img-top" alt="">
+            <div class="card-body" >
+                <h4 class="card-title">Summer In A Startup</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's</p>
+    <a href="#" class="btn btn-dark">Go somewhere</a>
+            </div>
+    
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6" data-aos="flip-right" data-aos-delay="800" >
+        <div class="card project-card-shape" style="background-color: #424242;  border-radius: 20px;">
+            <img src="images/red.png" class="circle card-img-top" alt="">
+            <div class="card-body ">
+                <h4 class="card-title">Startup Sphere</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-dark">Go somewhere</a>
+            </div>
+    
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6" data-aos="flip-right" data-aos-delay="1000">
+            <div class="card project-card-shape" style="background-color: #424242;  border-radius: 20px;">
+                <img src="images/con.png" class="circle card-img-top" alt="">
+                <div class="card-body ">
+                    <h4 class="card-title">Startup Sphere</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-dark">Go somewhere</a>
+                </div>
+        
+            </div> 
+    </div>    
+</div>
+</section>
+
+<!-- CONTACT US -->
+<section id="contact">
+    <div class="contact-head-div">
+<h1 class="contact-heading">Contact Us</h1>
+<img src="images/contact.png" class="contact-image" data-aos="zoom-in" alt="">
+</div>
+<div class="row">
+    <div class="col-lg-8" >
+        <div class="form-card container-lg">
+    <div>
+        <label class="sr-only" for="name">Name</label>
+        <input class="form-name" type="text" id="name" name="name" placeholder="Your Name*" 
+        required="required" style="color: rgb(161, 161, 161);" data-validation-required-message="Please enter your name.">
+    </div>
+    <div>
+        <label class="sr-only" for="email">Email</label>
+        <input class="form-email" type="email" id="email" name="email" placeholder="Your Email*" 
+        required="required" style="color: rgb(161, 161, 161);" data-validation-required-message="Please enter your email address.">
+    </div> 
+    <div class="form-group">
+        <textarea class="form-message" rows="7" id="message" name="message" placeholder="Your Message*" 
+        required="required" data-validation-required-message="Please enter your message."></textarea>
+        <p class="help-block text-danger"></p>
+      </div>
+     </div>
+     <div class="submit-button">Submit</div>
+    </div>
+  <div class="col-lg-4 info-card">
+    <div class="info">
+        <i class="far fa-handshake" style="margin-bottom: 8%;"></i><br>
+        <p style=" margin-bottom: 0;">Jai Vashishtha</p>
+   <p style=" margin-bottom: 0;"> Mobile no.: +91 7742064679</p>
+   <p style=" margin-bottom: 0;"> Vidyavihar, Pilani</p>
+    <p style="margin-bottom: 10%;"> Email: vashishtha.jai@gmail.com</p>
+</div>
+<div class="info">
+    <i class="fas fa-map-marked-alt" style="margin: 8% auto"></i>
+<p style=" margin-bottom: 0;">Center for Entrepreneurial Leadership</p>
+   <p style=" margin-bottom: 0;"> 1212-3, BITS Pilani</p>
+   <p style=" margin-bottom: 0;"> Vidyavihar, Pilani</p>
+    <p> Rajasthan | 333031</p>
+</div>
+</div>
+</div>
+
+
+</section>
 <script src="script.js"></script>
 </body>
 </html>

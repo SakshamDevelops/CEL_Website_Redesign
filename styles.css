@@ -2,6 +2,7 @@ body{
     text-align: center;
 }
 /* NAVBAR */
+
 ul{
  margin-right: 50px;
 }
@@ -16,20 +17,22 @@ li{
 .nav{
     background-color: #121212;
 }
-
+nav i {
+    transform: scale(1);
+}
 /* CLOCK TOWER IMAGES AND HEADINGS */
 
-h1{
+.heading-intro{
     font-family: 'Montserrat', sans-serif;
     color: azure;
-    animation: UpSmall 1.3s ease-in-out 0s 1 normal forwards;
+    animation: UpSmall 2s ease-in-out 0s 1 normal forwards;
 }
 
 .left{
  position: absolute;
  left: 0;
  z-index: -1;
- animation: leftIn 1s ease-in-out 1s normal forwards; 
+ animation: leftIn 3.5s ease-in-out 0.1s normal forwards; 
  opacity: 0;
 }
 .clock{
@@ -43,7 +46,7 @@ opacity: 0;
 position: absolute;
 right: 0;
 z-index: -1;
-animation: rightIn 1s ease-in-out 1s normal forwards; 
+animation: rightIn 3.5s ease-in-out 0.1s normal forwards; 
 opacity: 0;
 }
 
@@ -53,7 +56,7 @@ opacity: 0;
 
 @keyframes leftIn{
     from{
-        transform: translateX(-30px);
+        transform: translateX(-120px);
         opacity: 0;
     }
     to{
@@ -64,7 +67,7 @@ opacity: 0;
 
 @keyframes rightIn{
     from{
-        transform: translateX(30px);
+        transform: translateX(120px);
         opacity: 0;
     }
     to{
@@ -99,8 +102,9 @@ opacity: 0;
 
 .about-img{
      width: 90%;
-     margin: 10% 5% 5%;
+     margin: 10% 5% 1% ;
 }
+
 
 .card-head{
  position: relative;
@@ -108,25 +112,190 @@ opacity: 0;
  justify-content: center;
  align-items: center;
  background-color: #F4CE2F;
- width: 300px;
- height: 90px;
+ width: 400px;
+ height: 80px;
  opacity: 0.78;
  border-radius: 15px;
  font-size: 2.7rem;
- margin: 8% auto 0;
+ margin: 15% auto 0;
  font-family: 'Montserrat', sans-serif;
  z-index: 3;
  color: #3D3D3D;
 }
+span{
+    margin: 9% auto 0;
+}
+ 
+em{
+    font-size: 1.3rem;
+    color: azure;
+}
 
-.card-body{
+.card-about-body{
     width: 550px;
-    height: 500px;
+    height: 460px;
     opacity: 0.8;
-    border-radius: 15px;
+    border-radius: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: #424242;
-    margin: -5% auto;
+    color: #bebdbd;
+    padding: 0 5%;
+    margin: -5.5% auto;
+}
+
+/* Features */
+
+
+
+
+
+
+
+/* PROJECTS */
+
+#projects{
+    background-color: #242424;
+    padding: 2% 5% ;   
+}
+
+.heading-project{
+  margin: 0 auto 4%;
+  font-size: 5rem;
+  color: azure;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.circle{
+    width: 45%;
+    margin: 8% auto;
+}
+
+.circle:hover {
+   filter: drop-shadow(0 0 0.5rem #b1afaf);
+}
+
+.project-card-shape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #bebdbd;
+    padding: 5% 9%;
+    margin: 4%;
+}
+h4{
+    color: azure;
+}
+
+
+/* CONTACT US */
+
+
+#contact{
+ padding: 2% 10% ; 
+}
+
+
+/* FORM */
+
+
+.form-card{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5% 9% 2%;
+    background-color: #252525;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-name, .form-email{
+    background-color: #616161;
+    width: 100%;
+    height: 60px;
+    opacity: 0.78;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    border: none;
+    margin: 2% auto;
+    padding: 2%;
+}
+.contact-head-div{
+    display: flex;
+    justify-content: center;
+    margin: 2% auto 5%;
+}
+.contact-image{
+    width: 5%;
+    animation: contactpop .8s ease-in-out .2s iteration-count direction fill-mode;
+}
+.contact-heading{
+    display: inline-block;
+  font-size: 5rem;
+  color: azure;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-message{
+    width: 100%; 
+    background-color: #616161;
+    border: none; 
+    border-radius: 15px;
+    color: rgb(161, 161, 161);
+    padding: 2%;
+    font-size: 1.1rem;
+    margin: 2% auto;
+    opacity: 0.78;
+}
+
+input[type="text"], input[type="email"], textarea, select { 
+    outline: none;
+}
+
+.submit-button{
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #F4CE2F;
+ width: 200px;
+ height: 50px;
+ opacity: 0.8;
+ border-radius: 50px;
+ font-size: 2.2rem;
+ margin: -4% auto;
+ font-weight: lighter;
+ cursor: pointer;
+}
+.submit-button:hover{
+    opacity: 1;
+}
+::placeholder{
+    color: rgb(171, 171, 171);
+}
+/* Location and other info */
+
+.info{
+    width: 100%;
+}
+p{
+    color: rgb(197, 197, 197);
+}
+i{
+    color: rgb(197, 197, 197);
+    transform: scale(3);
+}
+i:hover{
+    color: #fff;
+}
+.info-card{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
 }
